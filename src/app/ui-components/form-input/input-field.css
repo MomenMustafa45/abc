@@ -8,7 +8,7 @@
   top: 26%;
   left: 28px;
   transition: all 0.3s ease;
-  background-color: #fff;
+  background-color: #f9f9f9;
   padding: 0 3px 0 3px;
   z-index: -1;
   color: #042c5c;
@@ -19,7 +19,7 @@
   top: -10px;
   left: 28px;
   padding: 0 3px 0 3px;
-  background-color: #fff;
+  background-color: #f9f9f9;
   z-index: 99999;
   color: #042c5c;
 }
