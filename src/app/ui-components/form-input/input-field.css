@@ -1,0 +1,40 @@
+.input-field {
+  padding-left: 28px;
+  border-color: #11d8dc !important;
+}
+
+.placeholder-field {
+  position: absolute;
+  top: 26%;
+  left: 28px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  padding: 0 3px 0 3px;
+  z-index: -1;
+  color: #042c5c;
+}
+
+.placeholder-field-only-top {
+  position: absolute;
+  top: -10px;
+  left: 28px;
+  padding: 0 3px 0 3px;
+  background-color: #fff;
+  z-index: 99999;
+  color: #042c5c;
+}
+
+.input-field:focus + .placeholder-field {
+  top: -10px;
+  z-index: 999;
+}
+
+.input-icon {
+  position: absolute;
+  top: 24%;
+  left: 10px;
+}
+
+.error-msg {
+  position: absolute;
+}
