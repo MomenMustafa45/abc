@@ -124,7 +124,11 @@ export function Login() {
           {/* end::Form group */}
 
           {/* Forgot Password on larg screens */}
-
+          <div className="forgot-pw-container">
+            <Link to="/auth/forgot-password" className="link-primary">
+              Forgot Password ?
+            </Link>
+          </div>
           {/* Forgot Password on larg screens */}
 
           {/* begin::Action */}
@@ -168,9 +172,7 @@ export function Login() {
       {/* end::Action */}
       <div className="text-center fw-semibold fs-6 login-footer">
         {/* begin::Link */}
-        <Link to="/auth/forgot-password" className="link-primary">
-          Forgot Password ?
-        </Link>
+
         {/* end::Link */}
 
         <Link to="/auth/registration" className="link-primary">

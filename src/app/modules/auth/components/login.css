@@ -200,6 +200,7 @@
 
 .login-form-text-container p {
   color: #656980;
+  text-align: start !important;
 }
 
 .btn-submit {
@@ -221,7 +222,7 @@
 }
 
 .login-btns-container button:first-child {
-  box-shadow: 0px 0px 15px 1px #11d8dc !important;
+  box-shadow: 0px 0px 1px 0px #11d8dc !important;
   font-size: 14px;
   height: 30px;
   width: 130px;
@@ -235,7 +236,7 @@
 
 .login-btns-container button:last-child {
   border: 2px solid #11d8dc !important;
-  box-shadow: 0px 0px 15px 1px #11d8dc !important;
+  box-shadow: 0px 0px 1px 0px #11d8dc !important;
   font-size: 14px;
   height: 30px;
   width: 130px;
