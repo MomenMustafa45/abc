@@ -1,6 +1,9 @@
 :root {
   --main-shadow: 0px 2px 4px 1px;
 }
+.login-parent {
+  margin: 20px 0;
+}
 
 .login-nav-container {
   display: flex;
@@ -398,6 +401,9 @@
   }
   .login-nav-container {
     padding: 7px 20px;
+  }
+  .login-footer .footer-links-container a {
+    font-size: 10px;
   }
 }
 
