@@ -59,7 +59,7 @@ export function Login() {
   });
 
   return (
-    <div className="d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100">
+    <div className="d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100 overflow-hidden">
       {/* Header of the sign in page */}
       <div className="login-header-icon">
         <div className="icon-container">
@@ -73,10 +73,6 @@ export function Login() {
           <span></span>
           <Icon className="icon" />
         </div>
-        <div className="brand-text">
-          <h1>ABNcW</h1>
-          <p>ThE AlUMNI’S SIDEKIcK</p>
-        </div>
       </div>
       {/* end of header of the sign in page */}
 
@@ -88,11 +84,11 @@ export function Login() {
           id="kt_login_signin_form"
         >
           {/* begin::Heading */}
-          <div className="text-center mb-11">
-            <h1 className="login-form-text">Sign In!</h1>
-            {/* <div className="text-gray-500 fw-semibold fs-6">
-              Your Social Campaigns
-            </div> */}
+          <div className="login-form-text-container text-center mb-11">
+            <h1 className="login-form-header-text">Welcome!</h1>
+            <p>
+              Connect, collaborate, support and thrive with your fellow Alumni.
+            </p>
           </div>
           {/* begin::Heading */}
 

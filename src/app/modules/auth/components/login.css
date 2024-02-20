@@ -13,7 +13,7 @@
 
 .login-header-icon .icon-container {
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,16 +181,27 @@
     transform: rotate(-360deg);
   }
 }
+/* End Of ICON ANIMATION */
+.login-form-text-container {
+  margin: 30px 0 50px 0;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-.login-form-text {
+.login-form-header-text {
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #042c5c;
-  color: rgb(4, 44, 92);
+  color: #656980;
   font-weight: bold;
   font-size: 23px;
-  margin: 30px 0 50px 0;
 }
+
+.login-form-text-container p {
+  color: #656980;
+}
+
 .btn-submit {
   color: #fff;
   background-color: #36e9f7;
@@ -286,6 +297,9 @@
     width: auto;
     overflow: visible;
     margin-top: 100px;
+  }
+  .login-form-parent form {
+    margin-top: 75px;
   }
 }
 
