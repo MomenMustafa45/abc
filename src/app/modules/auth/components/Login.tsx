@@ -59,7 +59,7 @@ export function Login() {
   });
 
   return (
-    <div className="d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100 overflow-hidden">
+    <div className="d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100">
       {/* Header of the sign in page */}
       <div className="login-header-icon">
         <div className="icon-container">
