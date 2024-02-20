@@ -399,9 +399,6 @@
   .login-footer .footer-links-container a {
     font-size: 10px;
   }
-  .login-parent {
-    overflow-x: hidden;
-  }
 }
 
 @media (min-width: 600px) {
