@@ -61,12 +61,25 @@ export function Login() {
   return (
     <div className="d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100">
       {/* Header of the sign in page */}
-      <div className="login-header-icon d-flex flex-lg-row-fluid w-lg-50 flex-center pt-20">
-        {/* <Icon className="icon" /> */}
-        <div className="icon-container"></div>
-        <div className="brand-text"></div>
+      <div className="login-header-icon">
+        <div className="icon-container">
+          <span></span>
+          <span></span>
+          <span>
+            <p className="ball"></p>
+            <p className="ball"></p>
+            <p className="ball"></p>
+          </span>
+          <span></span>
+          <Icon className="icon" />
+        </div>
+        <div className="brand-text">
+          <h1>ABNcW</h1>
+          <p>ThE AlUMNI’S SIDEKIcK</p>
+        </div>
       </div>
       {/* end of header of the sign in page */}
+
       <div className="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-lg-1 login-form-parent">
         <form
           className="form w-100"
@@ -76,7 +89,7 @@ export function Login() {
         >
           {/* begin::Heading */}
           <div className="text-center mb-11">
-            <h1 className="login-header-text">Sign In!</h1>
+            <h1 className="login-form-text">Sign In!</h1>
             {/* <div className="text-gray-500 fw-semibold fs-6">
               Your Social Campaigns
             </div> */}
