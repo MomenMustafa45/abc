@@ -11,6 +11,7 @@ import { useAuth } from "../core/Auth";
 import { ReactComponent as Icon } from "../../../../_metronic/assets/icons/login-logo.svg";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
+import { Languages } from "../../../../_metronic/partials/layout/header-menus/Languages";
 const loginSchema = Yup.object().shape({
   email: Yup.string()
     .email("Wrong email format")
@@ -60,6 +61,16 @@ export function Login() {
 
   return (
     <div className="login-parent d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100 ">
+      <div className="login-nav-container">
+        <div>
+          <h3>
+            ABN<span>cW</span>
+          </h3>
+          <p>ThE AlUMNI’S SIDEKIcK</p>
+        </div>
+        <Languages />
+      </div>
+
       {/* Header of the sign in page */}
       <div className="login-header-icon">
         <div className="icon-container">
