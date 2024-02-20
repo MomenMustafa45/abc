@@ -65,7 +65,7 @@ export function Login() {
         <Icon className="icon" />
       </div>
       {/* end of header of the sign in page */}
-      <div className="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-lg-1">
+      <div className="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-lg-1 login-form-parent">
         <form
           className="form w-100"
           onSubmit={formik.handleSubmit}
