@@ -396,6 +396,9 @@
   .login-btns-container {
     justify-content: space-between;
   }
+  .login-nav-container {
+    padding: 7px 20px;
+  }
 }
 
 @media (min-width: 600px) {
