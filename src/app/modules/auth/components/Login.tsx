@@ -60,7 +60,7 @@ export function Login() {
   });
 
   return (
-    <>
+    <div>
       <div className="login-nav-container">
         <div>
           <h3>
@@ -194,6 +194,6 @@ export function Login() {
         <p>&copy; 2024 ABNCW</p>
         {/* end::Link */}
       </div>
-    </>
+    </div>
   );
 }
