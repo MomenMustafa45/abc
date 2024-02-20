@@ -70,7 +70,7 @@ export function Login() {
         </div>
         <Languages />
       </div>
-      <div className="login-parent d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100 ">
+      <div className="login-parent d-flex flex-column flex-lg-row-reverse flex-column-fluid">
         {/* Header of the sign in page */}
         <div className="login-header-icon">
           <div className="icon-container">
