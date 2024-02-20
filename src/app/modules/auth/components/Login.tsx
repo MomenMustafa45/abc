@@ -125,6 +125,10 @@ export function Login() {
 
           {/* Forgot Password on larg screens */}
           <div className="forgot-pw-container">
+            <div className="remember-container">
+              <input type="checkbox" id="remember-me" />
+              <label htmlFor="remember-me">Remember this device</label>
+            </div>
             <Link to="/auth/forgot-password" className="link-primary">
               Forgot Password ?
             </Link>
@@ -156,15 +160,9 @@ export function Login() {
               className="btn rounded-pill fw-bold btn-submit"
             >
               <Link to="/auth/registration" className="">
-                Sign up
+                Register
               </Link>
             </button>
-          </div>
-          <div className="text-gray-500 text-center fw-semibold fs-6 footer-lg-screen">
-            Not a Member yet?
-            <Link to="/auth/registration" className="link-primary">
-              Sign up
-            </Link>
           </div>
         </form>
       </div>
@@ -174,10 +172,6 @@ export function Login() {
         {/* begin::Link */}
 
         {/* end::Link */}
-
-        <Link to="/auth/registration" className="link-primary">
-          Sign up
-        </Link>
       </div>
     </div>
   );

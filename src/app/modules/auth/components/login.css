@@ -202,6 +202,22 @@
   color: #656980;
   text-align: start !important;
 }
+.forgot-pw-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 20px;
+  margin-top: -30px;
+}
+
+.remember-container {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.remember-container input {
+  margin-right: 4px;
+}
 
 .btn-submit {
   color: #fff;
