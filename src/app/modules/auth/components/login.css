@@ -293,26 +293,27 @@
 
 .login-footer {
   margin-top: auto;
-  padding: 30px 40px;
+  padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.login-footer a:first-child {
-  color: #042c5c !important;
+.login-footer .footer-links-container a {
+  color: #919191;
+  padding-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+.login-footer .footer-links-container a:hover {
+  text-decoration: underline !important;
 }
 
-.login-footer a:last-child {
-  color: #ff4e6a !important;
-  font-size: 20px;
-}
-
-.footer-lg-screen {
-  display: none;
-}
-.forgot-pw-lg-screen {
-  display: none !important;
+.login-footer p {
+  color: #919191;
+  margin: 0;
+  white-space: nowrap;
 }
 
 @media (max-width: 1200px) {
@@ -382,9 +383,6 @@
 }
 
 @media (min-width: 990px) {
-  .login-footer {
-    display: none;
-  }
   .footer-lg-screen {
     display: block;
   }

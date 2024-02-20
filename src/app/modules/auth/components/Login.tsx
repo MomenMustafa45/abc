@@ -60,7 +60,7 @@ export function Login() {
   });
 
   return (
-    <div className="login-parent d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100 ">
+    <>
       <div className="login-nav-container">
         <div>
           <h3>
@@ -70,120 +70,130 @@ export function Login() {
         </div>
         <Languages />
       </div>
-
-      {/* Header of the sign in page */}
-      <div className="login-header-icon">
-        <div className="icon-container">
-          <span></span>
-          <span></span>
-          <span>
-            <p className="ball"></p>
-            <p className="ball"></p>
-            <p className="ball"></p>
-          </span>
-          <span></span>
-          <Icon className="icon" />
-        </div>
-      </div>
-      {/* end of header of the sign in page */}
-
-      <div className="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-lg-1 login-form-parent">
-        <form
-          className="form w-100"
-          onSubmit={formik.handleSubmit}
-          noValidate
-          id="kt_login_signin_form"
-        >
-          {/* begin::Heading */}
-          <div className="login-form-text-container text-center mb-11">
-            <h1 className="login-form-header-text">Welcome!</h1>
-            <p>
-              Connect, collaborate, support and thrive with your fellow Alumni.
-            </p>
+      <div className="login-parent d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100 ">
+        {/* Header of the sign in page */}
+        <div className="login-header-icon">
+          <div className="icon-container">
+            <span></span>
+            <span></span>
+            <span>
+              <p className="ball"></p>
+              <p className="ball"></p>
+              <p className="ball"></p>
+            </span>
+            <span></span>
+            <Icon className="icon" />
           </div>
-          {/* begin::Heading */}
+        </div>
+        {/* end of header of the sign in page */}
 
-          {/* begin::Separator */}
-          {/* <div className="separator separator-content my-14">
+        <div className="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-lg-1 login-form-parent">
+          <form
+            className="form w-100"
+            onSubmit={formik.handleSubmit}
+            noValidate
+            id="kt_login_signin_form"
+          >
+            {/* begin::Heading */}
+            <div className="login-form-text-container text-center mb-11">
+              <h1 className="login-form-header-text">Welcome!</h1>
+              <p>
+                Connect, collaborate, support and thrive with your fellow
+                Alumni.
+              </p>
+            </div>
+            {/* begin::Heading */}
+
+            {/* begin::Separator */}
+            {/* <div className="separator separator-content my-14">
             <span className="w-125px text-gray-500 fw-semibold fs-7">
               Or with email
             </span>
           </div> */}
-          {/* end::Separator */}
+            {/* end::Separator */}
 
-          {/* begin::Form group */}
-          <div className="fv-row mb-15 position-relative">
-            <InputField
-              type="email"
-              formik={formik}
-              label="Username or Email"
-              Icon={User}
-            />
-          </div>
-
-          {/* end::Form group */}
-
-          {/* begin::Form group */}
-          <div className="fv-row mb-15 position-relative">
-            <InputField
-              type="password"
-              formik={formik}
-              label="Password"
-              Icon={PassIcon}
-            />
-          </div>
-          {/* end::Form group */}
-
-          {/* Forgot Password on larg screens */}
-          <div className="forgot-pw-container">
-            <div className="remember-container">
-              <input type="checkbox" id="remember-me" />
-              <label htmlFor="remember-me">Remember this device</label>
+            {/* begin::Form group */}
+            <div className="fv-row mb-15 position-relative">
+              <InputField
+                type="email"
+                formik={formik}
+                label="Username or Email"
+                Icon={User}
+              />
             </div>
-            <Link to="/auth/forgot-password" className="link-primary">
-              Forgot Password ?
-            </Link>
-          </div>
-          {/* Forgot Password on larg screens */}
 
-          {/* begin::Action */}
-          <div className="login-btns-container d-flex mb-10">
-            <button
-              type="submit"
-              id="kt_sign_in_submit"
-              className="btn rounded-pill fw-bold btn-submit"
-              disabled={formik.isSubmitting || !formik.isValid}
-            >
-              {!loading && <span className="indicator-label">Login</span>}
-              {loading && (
-                <span
-                  className="indicator-progress"
-                  style={{ display: "block" }}
-                >
-                  Please wait...
-                  <span className="spinner-border spinner-border-sm align-middle ms-2"></span>
-                </span>
-              )}
-            </button>
-            <button
-              type="submit"
-              id="kt_sign_in_submit"
-              className="btn rounded-pill fw-bold btn-submit"
-            >
-              <Link to="/auth/registration" className="">
-                Register
+            {/* end::Form group */}
+
+            {/* begin::Form group */}
+            <div className="fv-row mb-15 position-relative">
+              <InputField
+                type="password"
+                formik={formik}
+                label="Password"
+                Icon={PassIcon}
+              />
+            </div>
+            {/* end::Form group */}
+
+            {/* Forgot Password on larg screens */}
+            <div className="forgot-pw-container">
+              <div className="remember-container">
+                <input type="checkbox" id="remember-me" />
+                <label htmlFor="remember-me">Remember this device</label>
+              </div>
+              <Link to="/auth/forgot-password" className="link-primary">
+                Forgot Password ?
               </Link>
-            </button>
-          </div>
-        </form>
+            </div>
+            {/* Forgot Password on larg screens */}
+
+            {/* begin::Action */}
+            <div className="login-btns-container d-flex mb-10">
+              <button
+                type="submit"
+                id="kt_sign_in_submit"
+                className="btn rounded-pill fw-bold btn-submit"
+                disabled={formik.isSubmitting || !formik.isValid}
+              >
+                {!loading && <span className="indicator-label">Login</span>}
+                {loading && (
+                  <span
+                    className="indicator-progress"
+                    style={{ display: "block" }}
+                  >
+                    Please wait...
+                    <span className="spinner-border spinner-border-sm align-middle ms-2"></span>
+                  </span>
+                )}
+              </button>
+              <button
+                type="submit"
+                id="kt_sign_in_submit"
+                className="btn rounded-pill fw-bold btn-submit"
+              >
+                <Link to="/auth/registration" className="">
+                  Register
+                </Link>
+              </button>
+            </div>
+          </form>
+        </div>
+        {/* Header of the sign in page */}
+        {/* end::Action */}
       </div>
-      {/* Header of the sign in page */}
-      {/* end::Action */}
       <div className="text-center fw-semibold fs-6 login-footer">
         {/* begin::Link */}
-
+        <div className="footer-links-container">
+          <Link to="/auth">Terms of use</Link>
+          <Link to="/auth">Privacy Policy</Link>
+          <Link to="/auth">Contact Us</Link>
+          <Link to="/auth">About</Link>
+          <Link to="/auth">Blog</Link>
+          <Link to="/auth">Events</Link>
+        </div>
+        <p>&copy; 2024 ABNCW</p>
         {/* end::Link */}
       </div>
-    </div>
+    </>
   );
 }
