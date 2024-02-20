@@ -2,7 +2,7 @@
   --main-shadow: 0px 2px 4px 1px;
 }
 body {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 
 .login-nav-container {
