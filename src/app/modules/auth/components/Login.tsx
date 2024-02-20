@@ -62,7 +62,9 @@ export function Login() {
     <div className="d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100">
       {/* Header of the sign in page */}
       <div className="login-header-icon d-flex flex-lg-row-fluid w-lg-50 flex-center pt-20">
-        <Icon className="icon" />
+        {/* <Icon className="icon" /> */}
+        <div className="icon-container"></div>
+        <div className="brand-text"></div>
       </div>
       {/* end of header of the sign in page */}
       <div className="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-lg-1 login-form-parent">

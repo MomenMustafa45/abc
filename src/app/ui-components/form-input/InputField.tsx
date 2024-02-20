@@ -19,9 +19,7 @@ const InputField = ({ formik, type, label, Icon }) => {
   return (
     <>
       <input
-        className={`form-control bg-transparent input-field ${
-          firstValidValue && "is-invalid"
-        } ${secondValidValue && "is-valid"}`}
+        className={`form-control bg-transparent input-field`}
         type={type}
         name={type}
         autoComplete="off"
