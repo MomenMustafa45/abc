@@ -59,7 +59,7 @@ export function Login() {
   });
 
   return (
-    <div className="d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100">
+    <div className="login-parent d-flex flex-column flex-lg-row-reverse flex-column-fluid h-100 ">
       {/* Header of the sign in page */}
       <div className="login-header-icon">
         <div className="icon-container">
@@ -124,24 +124,18 @@ export function Login() {
           {/* end::Form group */}
 
           {/* Forgot Password on larg screens */}
-          <div className="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8 forgot-pw-lg-screen">
-            {/* begin::Link */}
-            <Link to="/auth/forgot-password" className="link-primary">
-              Forgot Password ?
-            </Link>
-            {/* end::Link */}
-          </div>
+
           {/* Forgot Password on larg screens */}
 
           {/* begin::Action */}
-          <div className="d-grid mb-10">
+          <div className="login-btns-container d-flex mb-10">
             <button
               type="submit"
               id="kt_sign_in_submit"
-              className="btn text-uppercase rounded-pill fw-bold btn-submit"
+              className="btn rounded-pill fw-bold btn-submit"
               disabled={formik.isSubmitting || !formik.isValid}
             >
-              {!loading && <span className="indicator-label">Sign In</span>}
+              {!loading && <span className="indicator-label">Login</span>}
               {loading && (
                 <span
                   className="indicator-progress"
@@ -152,9 +146,18 @@ export function Login() {
                 </span>
               )}
             </button>
+            <button
+              type="submit"
+              id="kt_sign_in_submit"
+              className="btn rounded-pill fw-bold btn-submit"
+            >
+              <Link to="/auth/registration" className="">
+                Sign up
+              </Link>
+            </button>
           </div>
           <div className="text-gray-500 text-center fw-semibold fs-6 footer-lg-screen">
-            Not a Member yet?{" "}
+            Not a Member yet?
             <Link to="/auth/registration" className="link-primary">
               Sign up
             </Link>
