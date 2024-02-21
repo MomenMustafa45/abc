@@ -28,8 +28,13 @@ body {
   display: flex;
 }
 
-.login-nav-container .nav-text-logo {
+.login-nav-container .nav-img-logo {
   margin-right: 13px;
+}
+
+.login-nav-container .nav-img-logo img {
+  width: 100px;
+  height: 44px;
 }
 
 .login-nav-container .nav-text-logo h3 {
@@ -414,9 +419,6 @@ body {
   background-color: #fff !important;
 }
 
-.login-btns-container button:last-child:hover {
-}
-
 .login-btns-container button:last-child a {
   font-size: 18px;
   color: #656980;
@@ -581,12 +583,12 @@ body {
   .login-header-icon .icon-container .turning-circle:nth-child(2)::before {
     width: 15px;
     height: 15px;
-    top: 94%;
+    top: 103%;
   }
   .login-header-icon .icon-container .turning-circle:nth-child(2)::after {
-    width: 25px;
-    height: 25px;
-    top: 22%;
+    width: 21px;
+    height: 21px;
+    top: 26%;
     right: -2%;
   }
   .login-header-icon .icon-container .turning-circle:nth-child(3) {
@@ -613,7 +615,7 @@ body {
     .ball:nth-child(2) {
     width: 20px;
     height: 20px;
-    top: 0%;
+    top: 10%;
   }
 
   .login-header-icon
@@ -622,7 +624,7 @@ body {
     .ball:nth-child(3) {
     width: 13px;
     height: 13px;
-    top: 0%;
+    top: 101%;
     right: 30%;
   }
   .login-header-icon .icon-container .turning-circle:nth-child(3)::after {
