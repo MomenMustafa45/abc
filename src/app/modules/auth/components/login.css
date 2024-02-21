@@ -358,16 +358,17 @@ body {
 .remember-container input:before {
   font-family: "FontAwesome";
   content: "\f00c";
-  font-size: 14px;
+  font-size: 9px;
   color: transparent !important;
   background: #fef2e0;
+  background-color: rgb(254, 242, 224);
   display: block;
-  width: 21px;
-  height: 21px;
+  width: 14px;
+  height: 14px;
   border: 1px solid #fd6729;
   margin-right: 7px;
   cursor: pointer;
-  padding-left: 3.5px;
+  padding-left: 2px;
 }
 .remember-container input:checked:before {
   color: black !important;
@@ -531,7 +532,7 @@ body {
     font-size: 6px;
     width: 10px;
     height: 10px;
-    padding-left: 1.5px;
+    padding-left: 2px;
   }
   .remember-container label {
     font-size: 12px;
