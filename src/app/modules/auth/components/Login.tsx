@@ -10,6 +10,7 @@ import InputField from "../../../ui-components/form-input/InputField";
 import { useAuth } from "../core/Auth";
 import { ReactComponent as Icon } from "../../../../_metronic/assets/icons/login-logo.svg";
 import logoLogin from "../../../../_metronic/assets/icons/login-logo-pic.png";
+import navImg from "../../../../_metronic/assets/icons/Group 1888.png";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
 import { Languages } from "../../../../_metronic/partials/layout/header-menus/Languages";
@@ -63,11 +64,16 @@ export function Login() {
   return (
     <div style={{ height: "100%" }} className="login-page">
       <div className="login-nav-container">
-        <div>
-          <h3>
-            ABN<span>cW</span>
-          </h3>
-          <p>ThE AlUMNI’S SIDEKIcK</p>
+        <div className="nav-left-side">
+          <div className="nav-text-logo">
+            <h3>
+              ABN<span>cW</span>
+            </h3>
+            <p>ThE AlUMNI’S SIDEKIcK</p>
+          </div>
+          <div>
+            <img src={navImg} alt="" />
+          </div>
         </div>
         <Languages />
       </div>

@@ -22,17 +22,26 @@ body {
   max-width: 1200px;
   margin: auto;
 }
-
-.login-nav-container div:first-child h3 {
-  margin: 0;
-  font-size: 22px;
-  color: #1bd8dc;
+.login-nav-container .nav-left-side {
+  display: flex;
 }
-.login-nav-container div:first-child h3 span {
+
+.login-nav-container .nav-text-logo {
+  margin-right: 13px;
+}
+
+.login-nav-container .nav-text-logo h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #1bd8dc;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+.login-nav-container .nav-text-logo h3 span {
   color: #fd6728;
 }
 
-.login-nav-container div:first-child p {
+.login-nav-container .nav-text-logo p {
   margin: 0;
   padding: 0;
   font-size: 10px;
