@@ -67,7 +67,7 @@
 .login-header-icon .icon-container .turning-circle:first-child {
   width: 235px;
   height: 235px;
-  /* animation: rotateAnimationToRight 10s linear infinite; */
+  animation: rotateAnimationToRight 10s linear infinite;
 }
 
 .login-header-icon .icon-container span:nth-child(6) {
@@ -78,7 +78,7 @@
 .login-header-icon .icon-container .turning-circle:nth-child(2) {
   width: 340px;
   height: 340px;
-  /* animation: rotateAnimationToLeft 15s linear infinite; */
+  animation: rotateAnimationToLeft 15s linear infinite;
 }
 
 .login-header-icon .icon-container span:nth-child(7) {
@@ -89,7 +89,7 @@
 .login-header-icon .icon-container .turning-circle:nth-child(3) {
   width: 435px;
   height: 435px;
-  /* animation: rotateAnimationToRight 20s linear infinite; */
+  animation: rotateAnimationToRight 20s linear infinite;
 }
 
 .login-header-icon .icon-container span:nth-child(8) {
@@ -119,7 +119,7 @@
   -moz-box-shadow: var(--main-shadow);
   box-shadow: var(--main-shadow);
   transform: translate(-71px, 63px);
-  /* animation: rotateCircle 10s linear reverse infinite; */
+  animation: rotateCircle 10s linear reverse infinite;
 }
 .login-header-icon .icon-container .turning-circle:nth-child(1)::before {
   content: "";
@@ -149,7 +149,7 @@
   -moz-box-shadow: var(--main-shadow);
   box-shadow: var(--main-shadow);
   border: 2px solid #fd4e6a;
-  /* animation: rotateCircle 15s linear infinite; */
+  animation: rotateCircle 15s linear infinite;
   transform: translate(311px, 7px);
 }
 
@@ -181,7 +181,7 @@
   -moz-box-shadow: var(--main-shadow);
   box-shadow: var(--main-shadow);
   border: 2px solid #fd4e6a;
-  /* animation: rotateCircle 20s linear reverse infinite; */
+  animation: rotateCircle 20s linear reverse infinite;
   transform: translate(393px, 272px);
 }
 
@@ -190,17 +190,12 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background-image: url("../../../_metronic/assets/avatar/300-1.jpg");
-  background-size: cover;
+  background-color: #fd6b6b;
+
   border-radius: 50%;
-  z-index: 100;
   /* top: 66%;
   right: 92%; */
-  -webkit-box-shadow: var(--main-shadow);
-  -moz-box-shadow: var(--main-shadow);
-  box-shadow: var(--main-shadow);
-  border: 2px solid #fd6728;
-  /* animation: rotateCircle 20s linear reverse infinite; */
+
   transform: translate(15px, 312px);
 }
 .login-header-icon
@@ -229,10 +224,13 @@
   z-index: -1 !important;
   /* top: 24%;
   right: 102%; */
-  transform: translate(0, 21px);
+  transform: translate(9px, 387px);
 }
 @keyframes rotateCircle {
-  100% {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
     transform: rotate(1turn);
   }
 }
@@ -330,7 +328,7 @@
     height: 20px;
     /* top: -10%;
     right: 68%; */
-    transform: translate(0px, 15px);
+    transform: translate(1px, 205px);
   }
 
   .login-header-icon .icon-container .turning-circle:nth-child(3)::after {
