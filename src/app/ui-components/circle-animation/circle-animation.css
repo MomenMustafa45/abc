@@ -67,7 +67,7 @@
 .login-header-icon .icon-container .turning-circle:first-child {
   width: 235px;
   height: 235px;
-  animation: rotateAnimationToRight 10s linear infinite;
+  /* animation: rotateAnimationToRight 10s linear infinite; */
 }
 
 .login-header-icon .icon-container span:nth-child(6) {
@@ -78,7 +78,7 @@
 .login-header-icon .icon-container .turning-circle:nth-child(2) {
   width: 340px;
   height: 340px;
-  animation: rotateAnimationToLeft 15s linear infinite;
+  /* animation: rotateAnimationToLeft 15s linear infinite; */
 }
 
 .login-header-icon .icon-container span:nth-child(7) {
@@ -89,7 +89,7 @@
 .login-header-icon .icon-container .turning-circle:nth-child(3) {
   width: 435px;
   height: 435px;
-  animation: rotateAnimationToRight 20s linear infinite;
+  /* animation: rotateAnimationToRight 20s linear infinite; */
 }
 
 .login-header-icon .icon-container span:nth-child(8) {
@@ -320,7 +320,7 @@
     height: 13px !important;
     /* top: 30%;
     right: 24%; */
-    transform: translate(29px, 69px);
+    transform: translate(232px, 113px);
   }
   .login-header-icon
     .icon-container
