@@ -184,6 +184,7 @@ body {
   -webkit-box-shadow: var(--main-shadow);
   -moz-box-shadow: var(--main-shadow);
   box-shadow: var(--main-shadow);
+  animation: rotateCircle 10s linear reverse infinite;
 }
 .login-header-icon .icon-container .turning-circle:nth-child(1)::before {
   content: "";
@@ -212,6 +213,7 @@ body {
   -moz-box-shadow: var(--main-shadow);
   box-shadow: var(--main-shadow);
   border: 2px solid #fd4e6a;
+  animation: rotateCircle 15s linear infinite;
 }
 
 .login-header-icon .icon-container .turning-circle:nth-child(2)::before {
@@ -241,6 +243,7 @@ body {
   -moz-box-shadow: var(--main-shadow);
   box-shadow: var(--main-shadow);
   border: 2px solid #fd4e6a;
+  animation: rotateCircle 20s linear reverse infinite;
 }
 
 .login-header-icon .icon-container .turning-circle:nth-child(3)::before {
@@ -258,6 +261,7 @@ body {
   -moz-box-shadow: var(--main-shadow);
   box-shadow: var(--main-shadow);
   border: 2px solid #fd6728;
+  animation: rotateCircle 20s linear reverse infinite;
 }
 .login-header-icon
   .icon-container
@@ -284,6 +288,11 @@ body {
   z-index: 50;
   top: 13%;
   right: 69%;
+}
+@keyframes rotateCircle {
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 @keyframes rotateAnimationToRight {

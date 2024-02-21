@@ -11,6 +11,7 @@ import { useAuth } from "../core/Auth";
 import logoLogin from "../../../../_metronic/assets/icons/login-logo-pic.png";
 import langFlag from "../../../../_metronic/assets/lang-flags/england.png";
 import navbarLogo from "../../../../_metronic/assets/icons/navbar-logo.png";
+import userAvatar from "../../../../_metronic/assets/avatar/300-1.jpg";
 import { ReactComponent as NavIcon } from "../../../../_metronic/assets/icons/Group 1888.svg";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
