@@ -9,6 +9,7 @@ import { toAbsoluteUrl } from "../../../../_metronic/helpers";
 import InputField from "../../../ui-components/form-input/InputField";
 import { useAuth } from "../core/Auth";
 import { ReactComponent as Icon } from "../../../../_metronic/assets/icons/login-logo.svg";
+import logoLogin from "../../../../_metronic/assets/icons/login-logo-pic.png";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
 import { Languages } from "../../../../_metronic/partials/layout/header-menus/Languages";
@@ -74,15 +75,23 @@ export function Login() {
         {/* Header of the sign in page */}
         <div className="login-header-icon">
           <div className="icon-container">
-            <span></span>
-            <span></span>
-            <span>
+            <span className="turning-circle"></span>
+            <span className="turning-circle"></span>
+            <span className="turning-circle">
               <p className="ball"></p>
               <p className="ball"></p>
               <p className="ball"></p>
             </span>
-            <span></span>
-            <Icon className="icon" />
+            <span className="turning-circle"></span>
+            <span className="stroke-circle"></span>
+            <span className="stroke-circle"></span>
+            <span className="stroke-circle"></span>
+            <span className="stroke-circle"></span>
+
+            {/* <Icon className="icon" /> */}
+            <div className="logo-img-container">
+              <img src={logoLogin} alt="this is logo" />
+            </div>
           </div>
         </div>
         {/* end of header of the sign in page */}
