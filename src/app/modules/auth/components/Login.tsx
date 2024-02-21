@@ -61,7 +61,7 @@ export function Login() {
   });
 
   return (
-    <div style={{ height: "100%" }}>
+    <div style={{ height: "100%" }} className="login-page">
       <div className="login-nav-container">
         <div>
           <h3>
