@@ -276,7 +276,7 @@
   .login-header-icon .icon-container span:nth-child(1)::after {
     width: 15px !important;
     height: 15px !important;
-    transform: translate(19px, 114px) !important;
+    transform: translate(19px, 114px);
   }
   .login-header-icon .icon-container .turning-circle:nth-child(1)::before {
     width: 13px;
