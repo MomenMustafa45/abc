@@ -11,6 +11,7 @@ import { useAuth } from "../core/Auth";
 import { ReactComponent as Icon } from "../../../../_metronic/assets/icons/login-logo.svg";
 import logoLogin from "../../../../_metronic/assets/icons/login-logo-pic.png";
 import navImg from "../../../../_metronic/assets/icons/Group 1888.png";
+import { ReactComponent as NavIcon } from "../../../../_metronic/assets/icons/Group 1888.svg";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
 import { Languages } from "../../../../_metronic/partials/layout/header-menus/Languages";
@@ -72,7 +73,7 @@ export function Login() {
             <p>ThE AlUMNI’S SIDEKIcK</p>
           </div>
           <div>
-            <img src={navImg} alt="" />
+            <NavIcon />
           </div>
         </div>
         <Languages />
