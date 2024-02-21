@@ -224,7 +224,7 @@
   z-index: -1 !important;
   /* top: 24%;
   right: 102%; */
-  transform: translate(9px, 387px);
+  transform: translate(363px, 405px);
 }
 @keyframes rotateCircle {
   from {
@@ -276,7 +276,7 @@
   .login-header-icon .icon-container span:nth-child(1)::after {
     width: 15px !important;
     height: 15px !important;
-    transform: translate(3px, 25px) !important;
+    transform: translate(19px, 114px) !important;
   }
   .login-header-icon .icon-container .turning-circle:nth-child(1)::before {
     width: 13px;
@@ -291,7 +291,7 @@
     width: 15px;
     height: 15px;
     /* top: 108%; */
-    transform: translate(7px, 175px);
+    transform: translate(150px, 156px);
   }
   .login-header-icon .icon-container .turning-circle:nth-child(2)::after {
     width: 20px;
@@ -318,7 +318,7 @@
     height: 13px !important;
     /* top: 30%;
     right: 24%; */
-    transform: translate(232px, 113px);
+    transform: translate(180px, 135px);
   }
   .login-header-icon
     .icon-container
