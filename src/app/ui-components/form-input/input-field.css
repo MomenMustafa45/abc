@@ -9,10 +9,11 @@
   top: 26%;
   left: 28px;
   transition: all 0.3s ease;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   padding: 0 3px 0 3px;
   z-index: 50;
   color: #042c5c;
+  border-radius: 2px;
 }
 
 .placeholder-field-only-top {
@@ -20,9 +21,10 @@
   top: -10px;
   left: 28px;
   padding: 0 3px 0 3px;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   z-index: 99999;
   color: #042c5c;
+  border-radius: 2px;
 }
 
 .input-field:focus + .placeholder-field {
