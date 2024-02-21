@@ -639,7 +639,8 @@ body {
     .ball:nth-child(2) {
     width: 20px;
     height: 20px;
-    top: 2%;
+    top: -10%;
+    right: 68%;
   }
 
   .login-header-icon .icon-container .turning-circle:nth-child(3)::after {
