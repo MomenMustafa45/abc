@@ -56,9 +56,6 @@ body {
   color: #ec703d;
   cursor: pointer;
 }
-.login-nav-container .lang-container p span {
-  margin-right: 6px;
-}
 
 .login-header-icon {
   display: flex;
@@ -401,7 +398,6 @@ body {
 
 .login-btns-container button:first-child span {
   font-size: 18px;
-  color: #fff !important;
 }
 
 .login-btns-container button:last-child {
@@ -506,9 +502,54 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .login-nav-container {
+    justify-content: end;
+  }
+  .login-nav-container .nav-left-side {
+    display: none;
+  }
+  .login-nav-container .lang-container p span:last-child {
+    display: none;
+  }
+  .login-form-header-text {
+    font-size: 32px;
+  }
+  .login-form-text-container p {
+    font-size: 16px;
+  }
+  .remember-container input::before {
+    font-size: 6px;
+    width: 10px;
+    height: 10px;
+    padding-left: 1.5px;
+  }
+  .remember-container label {
+    font-size: 12px;
+  }
+
+  .forgot-pw-container .forgot-text {
+    font-size: 14px;
+  }
+
+  .login-btns-container button:last-child {
+    width: 114px;
+  }
+  .login-btns-container button:last-child a {
+    font-size: 16px;
+  }
+
+  .login-btns-container button:first-child {
+    width: 114px;
+  }
+  .login-btns-container button:first-child span {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 990px) {
   .login-parent {
-    margin: 100px 0;
+    margin: 40px 0;
     margin-bottom: 0px;
     height: auto;
   }

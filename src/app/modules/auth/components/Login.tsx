@@ -77,10 +77,11 @@ export function Login() {
 
         <div className="lang-container">
           <p>
+            {" "}
             <span>
               <img src={langFlag} alt="" />
             </span>
-            Language
+            <span> Language</span>
           </p>
         </div>
       </div>

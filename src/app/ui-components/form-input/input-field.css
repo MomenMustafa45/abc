@@ -1,13 +1,14 @@
 .input-field {
-  padding-left: 28px;
+  padding-left: 40px;
   border-color: #11d8dc !important;
   background-color: #f4f4f4 !important;
+  font-size: 21px;
 }
 
 .placeholder-field {
   position: absolute;
-  top: 26%;
-  left: 28px;
+  top: 31%;
+  left: 40px;
   transition: all 0.3s ease;
   background-color: #f4f4f4;
   padding: 0 3px 0 3px;
@@ -19,7 +20,7 @@
 .placeholder-field-only-top {
   position: absolute;
   top: -10px;
-  left: 28px;
+  left: 40px;
   padding: 0 3px 0 3px;
   background-color: #f4f4f4;
   z-index: 99999;
@@ -34,10 +35,16 @@
 
 .input-icon {
   position: absolute;
-  top: 24%;
-  left: 10px;
+  top: 32%;
+  left: 20px;
 }
 
 .error-msg {
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .input-field {
+    font-size: 18px;
+  }
 }
