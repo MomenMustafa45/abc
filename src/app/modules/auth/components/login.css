@@ -132,6 +132,7 @@ body {
   width: 235px;
   height: 235px;
   animation: rotateAnimationToRight 10s linear infinite;
+  z-index: -2;
 }
 
 .login-header-icon .icon-container span:nth-child(6) {
