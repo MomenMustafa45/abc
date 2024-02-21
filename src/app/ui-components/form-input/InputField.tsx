@@ -24,11 +24,13 @@ const InputField = ({ formik, type, label, Icon }) => {
         name={type}
         autoComplete="off"
         {...formik.getFieldProps(type)}
+        id={type}
       />
       <label
         className={`${
           value?.length > 0 ? "placeholder-field-only-top" : "placeholder-field"
         }`}
+        htmlFor={type}
       >
         {label}
       </label>

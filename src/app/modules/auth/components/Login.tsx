@@ -8,13 +8,11 @@ import { getUserByToken, login } from "../core/_requests";
 import { toAbsoluteUrl } from "../../../../_metronic/helpers";
 import InputField from "../../../ui-components/form-input/InputField";
 import { useAuth } from "../core/Auth";
-import { ReactComponent as Icon } from "../../../../_metronic/assets/icons/login-logo.svg";
 import logoLogin from "../../../../_metronic/assets/icons/login-logo-pic.png";
-import navImg from "../../../../_metronic/assets/icons/Group 1888.png";
+import langFlag from "../../../../_metronic/assets/lang-flags/england.png";
 import { ReactComponent as NavIcon } from "../../../../_metronic/assets/icons/Group 1888.svg";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
-import { Languages } from "../../../../_metronic/partials/layout/header-menus/Languages";
 const loginSchema = Yup.object().shape({
   email: Yup.string()
     .email("Wrong email format")
@@ -76,7 +74,15 @@ export function Login() {
             <NavIcon />
           </div>
         </div>
-        <Languages />
+
+        <div className="lang-container">
+          <p>
+            <span>
+              <img src={langFlag} alt="" />
+            </span>
+            Language
+          </p>
+        </div>
       </div>
       <div className="login-parent d-flex flex-column flex-lg-row flex-column-fluid">
         {/* Header of the sign in page */}

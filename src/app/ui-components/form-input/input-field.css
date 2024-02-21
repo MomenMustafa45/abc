@@ -1,6 +1,7 @@
 .input-field {
   padding-left: 28px;
   border-color: #11d8dc !important;
+  background-color: #f4f4f4 !important;
 }
 
 .placeholder-field {
@@ -10,7 +11,7 @@
   transition: all 0.3s ease;
   background-color: #f9f9f9;
   padding: 0 3px 0 3px;
-  z-index: -1;
+  z-index: 50;
   color: #042c5c;
 }
 
