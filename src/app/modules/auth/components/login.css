@@ -283,9 +283,9 @@ body {
   height: 40px;
   background-color: #1bd8dc;
   border-radius: 50%;
-  z-index: 50;
-  top: 13%;
-  right: 69%;
+  z-index: -1 !important;
+  top: 24%;
+  right: 102%;
 }
 @keyframes rotateCircle {
   100% {
