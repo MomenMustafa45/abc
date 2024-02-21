@@ -14,7 +14,6 @@ const InputField = ({ formik, type, label, Icon }) => {
 
   useEffect(() => {
     setValue(formik.getFieldProps(type).value);
-    console.log(value);
   }, [formik, value, type]);
   return (
     <>

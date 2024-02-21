@@ -5,16 +5,13 @@ import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import { getUserByToken, login } from "../core/_requests";
-import { toAbsoluteUrl } from "../../../../_metronic/helpers";
 import InputField from "../../../ui-components/form-input/InputField";
 import { useAuth } from "../core/Auth";
-import logoLogin from "../../../../_metronic/assets/icons/login-logo-pic.png";
 import langFlag from "../../../../_metronic/assets/lang-flags/england.png";
 import navbarLogo from "../../../../_metronic/assets/icons/navbar-logo.png";
-import userAvatar from "../../../../_metronic/assets/avatar/300-1.jpg";
-import { ReactComponent as NavIcon } from "../../../../_metronic/assets/icons/Group 1888.svg";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
+import { CircleAnimation } from "../../../ui-components/circle-animation/CircleAnimation";
 const loginSchema = Yup.object().shape({
   email: Yup.string()
     .email("Wrong email format")
@@ -80,27 +77,11 @@ export function Login() {
           </p>
         </div>
       </div>
+
       <div className="login-parent d-flex flex-column flex-lg-row flex-column-fluid">
         {/* Header of the sign in page */}
         <div className="login-header-icon">
-          <div className="icon-container">
-            <span className="turning-circle"></span>
-            <span className="turning-circle"></span>
-            <span className="turning-circle">
-              <span className="ball"></span>
-              <span className="ball"></span>
-            </span>
-            <span className="turning-circle"></span>
-            <span className="stroke-circle"></span>
-            <span className="stroke-circle"></span>
-            <span className="stroke-circle"></span>
-            <span className="stroke-circle"></span>
-
-            {/* <Icon className="icon" /> */}
-            <div className="logo-img-container">
-              <img src={logoLogin} alt="this is logo" />
-            </div>
-          </div>
+          <CircleAnimation />
         </div>
         {/* end of header of the sign in page */}
 
