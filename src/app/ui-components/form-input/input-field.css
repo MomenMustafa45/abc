@@ -2,7 +2,7 @@
   padding-left: 40px;
   border-color: #11d8dc !important;
   background-color: #f4f4f4 !important;
-  font-size: 21px;
+  font-size: 16px;
 }
 
 .placeholder-field {
@@ -35,7 +35,7 @@
 
 .input-icon {
   position: absolute;
-  top: 32%;
+  top: 26%;
   left: 20px;
 }
 
