@@ -73,8 +73,27 @@ body {
 
 .login-header-icon .icon-container .stroke-circle {
   position: absolute;
-  border: 1px dashed #5adced;
+  --n: 40; /* control the number of dashes */
+  --d: 5deg; /* control the distance between dashes */
+  --t: 2px; /* control the thickness of border*/
+  --c: #5adced; /* control the coloration (can be a gradient) */
+
+  aspect-ratio: 1;
+}
+.login-header-icon .icon-container .stroke-circle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
   border-radius: 50%;
+  padding: var(--t);
+  background: var(--c);
+  mask: linear-gradient(#0000 0 0) content-box,
+    repeating-conic-gradient(
+      from calc(var(--d) / 2),
+      #000 0 calc(360deg / var(--n) - var(--d)),
+      #0000 0 calc(360deg / var(--n))
+    );
+  mask-composite: intersect;
 }
 
 .login-header-icon .icon-container .turning-circle {
