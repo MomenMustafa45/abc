@@ -75,7 +75,7 @@ body {
   position: absolute;
   --n: 40; /* control the number of dashes */
   --d: 5deg; /* control the distance between dashes */
-  --t: 2px; /* control the thickness of border*/
+  --t: 1px; /* control the thickness of border*/
   --c: #5adced; /* control the coloration (can be a gradient) */
 
   aspect-ratio: 1;
