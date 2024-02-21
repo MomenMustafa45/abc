@@ -60,7 +60,7 @@ export function Login() {
   });
 
   return (
-    <div>
+    <div style={{ height: "100%" }}>
       <div className="login-nav-container">
         <div>
           <h3>
@@ -70,7 +70,7 @@ export function Login() {
         </div>
         <Languages />
       </div>
-      <div className="login-parent d-flex flex-column flex-lg-row-reverse flex-column-fluid">
+      <div className="login-parent d-flex flex-column flex-lg-row flex-column-fluid">
         {/* Header of the sign in page */}
         <div className="login-header-icon">
           <div className="icon-container">
@@ -141,7 +141,7 @@ export function Login() {
                 <input type="checkbox" id="remember-me" />
                 <label htmlFor="remember-me">Remember this device</label>
               </div>
-              <Link to="/auth/forgot-password" className="link-primary">
+              <Link to="/auth/forgot-password" className="forgot-text">
                 Forgot Password ?
               </Link>
             </div>

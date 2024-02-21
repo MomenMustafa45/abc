@@ -4,7 +4,9 @@
 body {
   overflow-x: hidden !important;
 }
-
+.login-parent {
+  height: 90%;
+}
 .login-nav-container {
   display: flex;
   justify-content: space-between;
@@ -236,6 +238,10 @@ body {
   margin-top: -30px;
 }
 
+.forgot-pw-container .forgot-text {
+  color: #656980 !important;
+}
+
 .remember-container {
   cursor: pointer;
   margin-bottom: 5px;
@@ -290,6 +296,10 @@ body {
   margin-right: 15px;
   border-radius: 11px !important;
   background-color: #f9f9f9 !important;
+  color: #656980 !important;
+}
+
+.login-btns-container button:last-child a {
   color: #656980 !important;
 }
 
@@ -373,6 +383,8 @@ body {
 @media (max-width: 990px) {
   .login-parent {
     margin: 100px 0;
+    margin-bottom: 0px;
+    height: auto;
   }
   .login-header-icon {
     width: auto;
