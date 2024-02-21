@@ -587,8 +587,8 @@ body {
     height: 70px;
   }
   .login-header-icon .icon-container span:first-child {
-    width: 140px !important;
-    height: 140px !important;
+    width: 13px !important;
+    height: 13px !important;
   }
   .login-header-icon .icon-container span:nth-child(1)::after {
     width: 15px !important;
