@@ -198,9 +198,6 @@ body {
   z-index: 999;
   top: 95%;
   right: 58%;
-  -webkit-box-shadow: var(--main-shadow);
-  -moz-box-shadow: var(--main-shadow);
-  box-shadow: var(--main-shadow);
 }
 
 .login-header-icon .icon-container .turning-circle:nth-child(3)::after {
@@ -248,9 +245,6 @@ body {
   z-index: 999;
   top: -1%;
   right: 40%;
-  -webkit-box-shadow: var(--main-shadow);
-  -moz-box-shadow: var(--main-shadow);
-  box-shadow: var(--main-shadow);
 }
 .login-header-icon
   .icon-container
@@ -264,9 +258,6 @@ body {
   z-index: 999;
   top: 13%;
   right: 69%;
-  -webkit-box-shadow: var(--main-shadow);
-  -moz-box-shadow: var(--main-shadow);
-  box-shadow: var(--main-shadow);
 }
 
 .login-header-icon
@@ -281,9 +272,6 @@ body {
   z-index: 999;
   top: 73%;
   right: 30%;
-  -webkit-box-shadow: var(--main-shadow);
-  -moz-box-shadow: var(--main-shadow);
-  box-shadow: var(--main-shadow);
 }
 
 @keyframes rotateAnimationToRight {
