@@ -86,9 +86,8 @@ export function Login() {
             <span className="turning-circle"></span>
             <span className="turning-circle"></span>
             <span className="turning-circle">
-              <p className="ball"></p>
-              <p className="ball"></p>
-              <p className="ball"></p>
+              <span className="ball"></span>
+              <span className="ball"></span>
             </span>
             <span className="turning-circle"></span>
             <span className="stroke-circle"></span>
