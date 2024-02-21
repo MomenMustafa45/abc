@@ -67,7 +67,7 @@
 .login-header-icon .icon-container .turning-circle:first-child {
   width: 235px;
   height: 235px;
-  /* animation: rotateAnimationToRight 10s linear infinite; */
+  animation: rotateAnimationToRight 10s linear infinite;
 }
 
 .login-header-icon .icon-container span:nth-child(6) {
@@ -78,7 +78,7 @@
 .login-header-icon .icon-container .turning-circle:nth-child(2) {
   width: 340px;
   height: 340px;
-  /* animation: rotateAnimationToLeft 15s linear infinite; */
+  animation: rotateAnimationToLeft 15s linear infinite;
 }
 
 .login-header-icon .icon-container span:nth-child(7) {
@@ -89,7 +89,7 @@
 .login-header-icon .icon-container .turning-circle:nth-child(3) {
   width: 435px;
   height: 435px;
-  /* animation: rotateAnimationToRight 20s linear infinite; */
+  animation: rotateAnimationToRight 20s linear infinite;
 }
 
 .login-header-icon .icon-container span:nth-child(8) {
@@ -278,12 +278,12 @@
   .login-header-icon .icon-container span:nth-child(1)::after {
     width: 15px !important;
     height: 15px !important;
-    transform: translate(-1px, 25px);
+    transform: translate(3px, 25px) !important;
   }
   .login-header-icon .icon-container .turning-circle:nth-child(1)::before {
     width: 13px;
     height: 13px;
-    transform: translate(-75px, -185px);
+    transform: translate(22px, -47px);
   }
   .login-header-icon .icon-container .turning-circle:nth-child(2) {
     width: 190px;
@@ -293,14 +293,14 @@
     width: 15px;
     height: 15px;
     /* top: 108%; */
-    transform: translate(7px, 24px);
+    transform: translate(7px, 175px);
   }
   .login-header-icon .icon-container .turning-circle:nth-child(2)::after {
     width: 20px;
     height: 20px;
     /* top: 26%;
     right: -1%; */
-    transform: translate(-3px, 10px);
+    transform: translate(29px, 9px);
   }
   .login-header-icon .icon-container .turning-circle:nth-child(3) {
     width: 240px;
@@ -310,7 +310,7 @@
     width: 20px;
     height: 20px;
     /* top: 66%; */
-    transform: translate(1px, 0px);
+    transform: translate(182px, 14px);
   }
   .login-header-icon
     .icon-container
@@ -320,7 +320,7 @@
     height: 13px !important;
     /* top: 30%;
     right: 24%; */
-    transform: translate(34px, 69px);
+    transform: translate(29px, 69px);
   }
   .login-header-icon
     .icon-container
@@ -330,12 +330,13 @@
     height: 20px;
     /* top: -10%;
     right: 68%; */
-    transform: translate(0px, 0px);
+    transform: translate(0px, 15px);
   }
 
   .login-header-icon .icon-container .turning-circle:nth-child(3)::after {
     width: 25px;
     height: 25px;
+    transform: translate(185px, 159px);
   }
   .login-header-icon .icon-container .turning-circle:nth-child(4) {
     width: 290px;
