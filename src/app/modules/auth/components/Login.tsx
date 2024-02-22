@@ -155,10 +155,8 @@ export function Login() {
           >
             {/* begin::Heading */}
             <div className="login-form-text-container text-center mb-11">
-              <h1 className="login-form-header-text" data-aos="fade-up">
-                Welcome!
-              </h1>
-              <p>
+              <h1 className="login-form-header-text slideInUp">Welcome!</h1>
+              <p className="slideInUp">
                 Connect, collaborate, support and thrive with your fellow
                 Alumni.
               </p>
@@ -174,7 +172,7 @@ export function Login() {
             {/* end::Separator */}
 
             {/* begin::Form group */}
-            <div className="fv-row mb-15 position-relative input-container">
+            <div className="fv-row mb-15 position-relative input-container slideInUp">
               <InputField
                 type="email"
                 formik={formik}
@@ -186,7 +184,7 @@ export function Login() {
             {/* end::Form group */}
 
             {/* begin::Form group */}
-            <div className="fv-row mb-15 position-relative input-container">
+            <div className="fv-row mb-15 position-relative input-container slideInUp">
               <InputField
                 type="password"
                 formik={formik}
@@ -197,7 +195,7 @@ export function Login() {
             {/* end::Form group */}
 
             {/* Forgot Password on larg screens */}
-            <div className="forgot-pw-container">
+            <div className="forgot-pw-container slideInUp">
               <div className="remember-container">
                 <input type="checkbox" id="remember-me" />
                 <label htmlFor="remember-me">Remember this device</label>
@@ -209,7 +207,7 @@ export function Login() {
             {/* Forgot Password on larg screens */}
 
             {/* begin::Action */}
-            <div className="login-btns-container d-flex mb-10">
+            <div className="login-btns-container d-flex mb-10 slideInUp">
               <button
                 type="submit"
                 id="kt_sign_in_submit"

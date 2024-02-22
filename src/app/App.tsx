@@ -5,13 +5,8 @@ import { LayoutProvider, LayoutSplashScreen } from "../_metronic/layout/core";
 import { MasterInit } from "../_metronic/layout/MasterInit";
 import { AuthInit } from "./modules/auth";
 import { ThemeModeProvider } from "../_metronic/partials/layout/theme-mode/ThemeModeProvider";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const App = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <Suspense fallback={<LayoutSplashScreen />}>
       <I18nProvider>
