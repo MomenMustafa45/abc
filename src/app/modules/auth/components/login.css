@@ -224,6 +224,7 @@ body {
   padding-right: 10px;
   text-decoration: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 .login-footer .footer-links-container a:hover {
   text-decoration: underline !important;
@@ -252,8 +253,8 @@ body {
   }
   .remember-container input::before {
     font-size: 5px;
-    width: 8px;
-    height: 8px;
+    width: 9px;
+    height: 9px;
     padding-left: 1.5px;
   }
   .remember-container label {
@@ -316,14 +317,15 @@ body {
 }
 
 @media (max-width: 600px) {
+  .login-footer * {
+    font-size: 10px;
+    color: #919191;
+  }
   .login-btns-container {
     justify-content: space-between;
   }
   .login-nav-container {
     padding: 7px 20px;
-  }
-  .login-footer .footer-links-container a {
-    font-size: 10px;
   }
 }
 
