@@ -290,6 +290,12 @@ body {
     margin-bottom: 0px;
     height: auto;
   }
+  .login-form-parent {
+    padding: 0 2.5rem !important;
+  }
+  .login-form-parent form {
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 990px) {

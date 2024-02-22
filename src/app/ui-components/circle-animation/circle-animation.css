@@ -257,9 +257,6 @@
   .login-header-icon {
     width: auto;
   }
-  .login-form-parent form {
-    margin-top: 75px;
-  }
 
   .login-header-icon .icon-container .logo-img-container {
     width: 80px;
@@ -353,6 +350,7 @@
     height: 240px;
   }
   .login-header-icon .icon-container span:nth-child(8) {
+    display: none;
     width: 290px;
     height: 290px;
   }
