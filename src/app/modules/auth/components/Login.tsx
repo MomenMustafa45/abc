@@ -116,7 +116,7 @@ export function Login() {
           </p>
           <div
             className="form-lang-container menu-sub menu-sub-dropdown w-175px"
-            style={{ height: `${openLangMenu ? "0px" : "85px"}` }}
+            style={{ height: `${openLangMenu ? "85px" : "0px"}` }}
           >
             {languages.map((l) => (
               <div

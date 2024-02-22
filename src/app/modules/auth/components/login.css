@@ -92,13 +92,13 @@ body {
   letter-spacing: 1px;
   color: #656980;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 28px;
 }
 
 .login-form-text-container p {
   color: #656980;
   text-align: start !important;
-  font-size: 28px;
+  font-size: 21px;
 }
 
 .forgot-pw-container {
@@ -132,13 +132,14 @@ body {
 .remember-container input:before {
   font-family: "FontAwesome";
   content: "\f00c";
-  font-size: 9px;
+  font-size: 7px;
   color: transparent !important;
   background: #fef2e0;
   background-color: rgb(254, 242, 224);
+  background-color: rgb(254, 242, 224);
   display: block;
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   border: 1px solid #fd6729;
   margin-right: 7px;
   cursor: pointer;
