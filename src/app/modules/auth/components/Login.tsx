@@ -172,7 +172,7 @@ export function Login() {
             {/* end::Separator */}
 
             {/* begin::Form group */}
-            <div className="fv-row mb-15 position-relative">
+            <div className="fv-row mb-15 position-relative input-container">
               <InputField
                 type="email"
                 formik={formik}
@@ -184,7 +184,7 @@ export function Login() {
             {/* end::Form group */}
 
             {/* begin::Form group */}
-            <div className="fv-row mb-15 position-relative">
+            <div className="fv-row mb-15 position-relative input-container">
               <InputField
                 type="password"
                 formik={formik}
