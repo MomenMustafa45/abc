@@ -12,6 +12,7 @@ import navbarLogo from "../../../../_metronic/assets/icons/navbar-logo.png";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
 import { CircleAnimation } from "../../../ui-components/circle-animation/CircleAnimation";
+import { toAbsoluteUrl } from "../../../../_metronic/helpers";
 const loginSchema = Yup.object().shape({
   email: Yup.string()
     .email("Wrong email format")
@@ -35,7 +36,42 @@ const initialValues = {
   https://medium.com/@maurice.de.beijer/yup-validation-and-typescript-and-formik-6c342578a20e
 */
 
+const languages = [
+  {
+    lang: "en",
+    name: "English",
+    flag: toAbsoluteUrl("media/flags/united-states.svg"),
+  },
+  {
+    lang: "zh",
+    name: "Mandarin",
+    flag: toAbsoluteUrl("media/flags/china.svg"),
+  },
+  {
+    lang: "es",
+    name: "Spanish",
+    flag: toAbsoluteUrl("media/flags/spain.svg"),
+  },
+  {
+    lang: "ja",
+    name: "Japanese",
+    flag: toAbsoluteUrl("media/flags/japan.svg"),
+  },
+  {
+    lang: "de",
+    name: "German",
+    flag: toAbsoluteUrl("media/flags/germany.svg"),
+  },
+  {
+    lang: "fr",
+    name: "French",
+    flag: toAbsoluteUrl("media/flags/france.svg"),
+  },
+];
+
 export function Login() {
+  const [flagLang, setFlagLang] = useState(languages[0].flag);
+  const [openLangMenu, setOpenLanMenu] = useState(false);
   const [loading, setLoading] = useState(false);
   const { saveAuth, setCurrentUser } = useAuth();
 
@@ -69,12 +105,37 @@ export function Login() {
         </div>
 
         <div className="lang-container">
-          <p>
+          <p
+            onClick={() => setOpenLanMenu(!openLangMenu)}
+            className="lang-text"
+          >
             <span>
-              <img src={langFlag} alt="" />
+              <img src={flagLang} alt="" />
             </span>
             <span> Language</span>
           </p>
+          <div
+            className="form-lang-container menu-sub menu-sub-dropdown w-175px"
+            style={{ height: `${openLangMenu ? "0px" : "85px"}` }}
+          >
+            {languages.map((l) => (
+              <div
+                className="menu-item px-3"
+                key={l.lang}
+                onClick={() => {
+                  setFlagLang(l.flag);
+                  setOpenLanMenu(!openLangMenu);
+                }}
+              >
+                <a href="#" className="menu-link d-flex px-5">
+                  <span className="symbol symbol-20px me-4">
+                    <img className="rounded-1" src={l.flag} alt="metronic" />
+                  </span>
+                  {l.name}
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

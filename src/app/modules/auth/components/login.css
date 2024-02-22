@@ -55,14 +55,30 @@ body {
   margin-top: -5px;
   color: #042c5c;
 }
-
-.login-nav-container .lang-container p {
+.login-nav-container .lang-container {
+  position: relative;
+}
+.login-nav-container .lang-container .lang-text {
   font-size: 16px;
   color: #ec703d;
   cursor: pointer;
 }
 
-/* End Of ICON ANIMATION */
+.login-nav-container .lang-container .lang-text img {
+  width: 13px;
+  height: 13px;
+}
+
+.form-lang-container {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transition: all 0.4s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
 .login-form-text-container {
   margin: 30px 0 50px 0;
   margin-bottom: 50px;
@@ -180,7 +196,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 15px;
   border-radius: 11px !important;
   background-color: #fff !important;
 }
@@ -235,9 +250,9 @@ body {
     font-size: 21px;
   }
   .remember-container input::before {
-    font-size: 6px;
-    width: 10px;
-    height: 10px;
+    font-size: 4px;
+    width: 8px;
+    height: 8px;
     padding-left: 2px;
   }
   .remember-container label {
@@ -260,6 +275,11 @@ body {
   }
   .login-btns-container button:first-child span {
     font-size: 16px;
+  }
+
+  .login-footer {
+    flex-direction: column;
+    padding: 5px 40px;
   }
 }
 
