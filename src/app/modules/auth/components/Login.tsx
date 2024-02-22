@@ -1,18 +1,18 @@
 /// <reference types="vite-plugin-svgr/client" />
 import "./login.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import { getUserByToken, login } from "../core/_requests";
 import InputField from "../../../ui-components/form-input/InputField";
 import { useAuth } from "../core/Auth";
-import langFlag from "../../../../_metronic/assets/lang-flags/england.png";
 import navbarLogo from "../../../../_metronic/assets/icons/navbar-logo.png";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
 import { CircleAnimation } from "../../../ui-components/circle-animation/CircleAnimation";
 import { toAbsoluteUrl } from "../../../../_metronic/helpers";
+
 const loginSchema = Yup.object().shape({
   email: Yup.string()
     .email("Wrong email format")
@@ -155,7 +155,9 @@ export function Login() {
           >
             {/* begin::Heading */}
             <div className="login-form-text-container text-center mb-11">
-              <h1 className="login-form-header-text">Welcome!</h1>
+              <h1 className="login-form-header-text" data-aos="fade-up">
+                Welcome!
+              </h1>
               <p>
                 Connect, collaborate, support and thrive with your fellow
                 Alumni.
