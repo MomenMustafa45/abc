@@ -119,6 +119,8 @@ body {
   margin-bottom: 5px;
   display: flex;
   align-items: center;
+  align-items: -webkit-center;
+  align-items: -moz-center;
 }
 
 .remember-container input {
