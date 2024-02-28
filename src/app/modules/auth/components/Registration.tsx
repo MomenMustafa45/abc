@@ -113,6 +113,7 @@ export function Registration() {
                   e.preventDefault();
                   setCurrentStep((prev) => prev - 1);
                 }}
+                className="transition-prev-btn"
               >
                 Previos
               </button>
