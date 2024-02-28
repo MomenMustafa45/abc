@@ -1,0 +1,69 @@
+.login-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.login-nav-container .nav-left-side {
+  display: flex;
+}
+
+.login-nav-container .nav-img-logo {
+  margin-right: 13px;
+}
+
+.login-nav-container .nav-img-logo img {
+  width: 167px;
+  height: 44px;
+}
+
+.login-nav-container .nav-text-logo h3 {
+  margin: 0;
+  font-size: 30px;
+  color: #1bd8dc;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+.login-nav-container .nav-text-logo h3 span {
+  color: #fd6728;
+}
+
+.login-nav-container .nav-text-logo p {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  margin-top: -5px;
+  color: #042c5c;
+}
+.login-nav-container .lang-container {
+  position: relative;
+}
+.login-nav-container .lang-container .lang-text {
+  font-size: 16px;
+  color: #ec703d;
+  cursor: pointer;
+}
+
+.login-nav-container .lang-container .lang-text img {
+  width: 13px;
+  height: 13px;
+}
+
+@media (max-width: 600px) {
+  .login-nav-container {
+    padding: 7px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .login-nav-container {
+    justify-content: end;
+  }
+  .login-nav-container .nav-left-side {
+    display: none;
+  }
+  .login-nav-container .lang-container p span:last-child {
+    display: none;
+  }
+}

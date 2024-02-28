@@ -1,0 +1,127 @@
+:root {
+  --main-text-details-form-color: #999696;
+  --main-text-head-form-color: #000;
+}
+
+.register-parent {
+  height: 100%;
+  margin: auto;
+  max-width: 1200px;
+  width: 900px;
+}
+
+.register-parent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/src/_metronic/assets/menu-header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 240px;
+  z-index: -1;
+}
+
+.register-form-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 7px 40px;
+  display: flex;
+  justify-content: space-between;
+  height: 80%;
+  margin-top: 60px;
+}
+
+.register-form {
+  position: relative;
+  width: 65%;
+  padding: 45px 60px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.register-form::after {
+  content: "Registration";
+  position: absolute;
+  color: #fff;
+  top: -40px;
+  left: 0;
+  font-size: 25px;
+}
+
+.steps-container {
+  width: 30%;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.steps-container .step {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.steps-container .step .step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  color: #000;
+  margin-right: 10px;
+  transition: 0.4s ease all;
+}
+.steps-container .step .step-active {
+  background-color: #4a669d;
+  color: #fff;
+}
+.steps-container .step .step-completed {
+  background-color: green;
+  color: #000;
+}
+
+.steps-container .step .step-text-box {
+}
+
+.steps-container .step .step-text-box p:first-child {
+  margin: 0;
+}
+
+.steps-container .step .step-text-box p:last-child {
+  margin: 0 !important;
+  font-size: 8px;
+  color: #999696;
+}
+
+.register-form .register-selectors-container {
+  height: 200px;
+}
+
+.register-form .register-next-btn {
+  margin-top: 3rem;
+  display: flex;
+}
+
+.register-form .register-next-btn button {
+  border: 1px solid #36e9f7;
+  box-shadow: 0px 6px 12px 0px #0089ff21;
+  height: 38px;
+  width: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.transition-form-box {
+  position: relative;
+}
+/* Transition form box */

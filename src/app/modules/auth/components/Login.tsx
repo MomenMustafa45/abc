@@ -7,11 +7,11 @@ import { useFormik } from "formik";
 import { getUserByToken, login } from "../core/_requests";
 import InputField from "../../../ui-components/form-input/InputField";
 import { useAuth } from "../core/Auth";
-import navbarLogo from "../../../../_metronic/assets/icons/navbar-logo.png";
 import { ReactComponent as PassIcon } from "../../../../_metronic/assets/icons/pass-icon.svg";
 import { ReactComponent as User } from "../../../../_metronic/assets/icons/user-icon.svg";
 import { CircleAnimation } from "../../../ui-components/circle-animation/CircleAnimation";
-import { toAbsoluteUrl } from "../../../../_metronic/helpers";
+import AuthNavbar from "../../../ui-components/authNavbar/AuthNavbar.jsx";
+import AuthFooter from "../../../ui-components/authFooter/AuthFooter.jsx";
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
@@ -36,42 +36,7 @@ const initialValues = {
   https://medium.com/@maurice.de.beijer/yup-validation-and-typescript-and-formik-6c342578a20e
 */
 
-const languages = [
-  {
-    lang: "en",
-    name: "English",
-    flag: toAbsoluteUrl("media/flags/united-states.svg"),
-  },
-  {
-    lang: "zh",
-    name: "Mandarin",
-    flag: toAbsoluteUrl("media/flags/china.svg"),
-  },
-  {
-    lang: "es",
-    name: "Spanish",
-    flag: toAbsoluteUrl("media/flags/spain.svg"),
-  },
-  {
-    lang: "ja",
-    name: "Japanese",
-    flag: toAbsoluteUrl("media/flags/japan.svg"),
-  },
-  {
-    lang: "de",
-    name: "German",
-    flag: toAbsoluteUrl("media/flags/germany.svg"),
-  },
-  {
-    lang: "fr",
-    name: "French",
-    flag: toAbsoluteUrl("media/flags/france.svg"),
-  },
-];
-
 export function Login() {
-  const [flagLang, setFlagLang] = useState(languages[0].flag);
-  const [openLangMenu, setOpenLanMenu] = useState(false);
   const [loading, setLoading] = useState(false);
   const { saveAuth, setCurrentUser } = useAuth();
 
@@ -97,48 +62,7 @@ export function Login() {
 
   return (
     <div style={{ height: "100%" }} className="login-page">
-      <div className="login-nav-container">
-        <div className="nav-left-side">
-          <div className="nav-img-logo">
-            <img src={navbarLogo} alt="" />
-          </div>
-        </div>
-
-        <div className="lang-container">
-          <p
-            onClick={() => setOpenLanMenu(!openLangMenu)}
-            className="lang-text"
-          >
-            <span>
-              <img src={flagLang} alt="" />
-            </span>
-            <span> Language</span>
-          </p>
-          <div
-            className="form-lang-container menu-sub menu-sub-dropdown w-175px"
-            style={{ height: `${openLangMenu ? "85px" : "0px"}` }}
-          >
-            {languages.map((l) => (
-              <div
-                className="menu-item px-3"
-                key={l.lang}
-                onClick={() => {
-                  setFlagLang(l.flag);
-                  setOpenLanMenu(!openLangMenu);
-                }}
-              >
-                <a href="#" className="menu-link d-flex px-5">
-                  <span className="symbol symbol-20px me-4">
-                    <img className="rounded-1" src={l.flag} alt="metronic" />
-                  </span>
-                  {l.name}
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
+      <AuthNavbar />
       <div className="login-parent d-flex flex-column flex-lg-row flex-column-fluid">
         {/* Header of the sign in page */}
         <div className="login-header-icon">
@@ -237,22 +161,9 @@ export function Login() {
             </div>
           </form>
         </div>
-        {/* Header of the sign in page */}
         {/* end::Action */}
       </div>
-      <div className="text-center fw-semibold fs-6 login-footer">
-        {/* begin::Link */}
-        <div className="footer-links-container">
-          <Link to="/auth">Terms of use</Link>
-          <Link to="/auth">Privacy Policy</Link>
-          <Link to="/auth">Contact Us</Link>
-          <Link to="/auth">About</Link>
-          <Link to="/auth">Blog</Link>
-          <Link to="/auth">Events</Link>
-        </div>
-        <p>&copy; 2024 ABNCW</p>
-        {/* end::Link */}
-      </div>
+      <AuthFooter />
     </div>
   );
 }
